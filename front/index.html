@@ -29,9 +29,13 @@
                             <p>Hello!</p>
                             <p>I'm Thet Htar</p>
                             <p>Nice to meet you <3</p>
-                            <button class="btn fs-4 fw-bold" style="background-color: aquamarine; color: darkcyan;">
-                                Explore My Blogs
-                            </button>
+                            <a href="posts.html">
+                                <button 
+                                    class="btn explore-btn fs-4 fw-bold" 
+                                >
+                                    Explore My Blogs
+                                </button>
+                            </a>                            
                         </div>
                         <div class="col-md-2"></div>
                     </div>
@@ -39,10 +43,10 @@
 
                 <!-- NAVIGATION SECTION  -->
                 <div id="navbar" class="d-flex justify-content-center position-sticky">
-                    <a href="">HOME</a>
-                    <a href="">ABOUT</a>
-                    <a href="">SKILLS</a>
-                    <a href="posts.html">BLOG</a>
+                    <a href="index.html">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#projects">SKILLS</a>
+                    <a href="#blogs">BLOG</a>
                 </div>
 
                 <!-- ABOUT SECTION -->
@@ -54,34 +58,37 @@
                                 <div class="row">
                                     <div class="col-md-5">
                                         <br>
-                                        <h2 class="text-center">ABOUT ME</h2><br>
-                                        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia
-                                             velit maiores quaerat. Sit cumque sapiente facere numquam, doloribus
-                                              laboriosam fugiat molestiae! Veritatis, exercitationem earum ratione
-                                               et error similique doloremque.
-                                        </P>
-                                        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia
-                                            velit maiores quaerat. Sit cumque sapiente facere numquam, doloribus
-                                             laboriosam fugiat molestiae! Veritatis, exercitationem earum ratione
-                                              et error similique doloremque.
-                                        </P><br>
-                                        <div class="row py-3 fs-4">
-                                            <div class="col-md-6 mb-2">
-                                                <div class="total-project">
-                                                    <i class="fa-solid fa-diagram-project pb-2"></i><br>
-                                                    <strong>5</strong>
-                                                    <p>Total Projects</p>
+                                        <div id="about">
+                                            <h2 class="text-center">ABOUT ME</h2><br>
+                                            <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia
+                                                velit maiores quaerat. Sit cumque sapiente facere numquam, doloribus
+                                                laboriosam fugiat molestiae! Veritatis, exercitationem earum ratione
+                                                et error similique doloremque.
+                                            </P>
+                                            <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia
+                                                velit maiores quaerat. Sit cumque sapiente facere numquam, doloribus
+                                                laboriosam fugiat molestiae! Veritatis, exercitationem earum ratione
+                                                et error similique doloremque.
+                                            </P><br>
+                                            <div class="row py-3 fs-4">
+                                                <div class="col-md-6 mb-2">
+                                                    <div class="total-project">
+                                                        <i class="fa-solid fa-diagram-project pb-2"></i><br>
+                                                        <strong>5</strong>
+                                                        <p>Total Projects</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="total-student">
+                                                        <i class="fa fa-users pb-2"></i><br>
+                                                        <strong>100</strong>
+                                                        <p>Total Students</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="total-student">
-                                                    <i class="fa fa-users pb-2"></i><br>
-                                                    <strong>100</strong>
-                                                    <p>Total Students</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </div>                                        
                                     </div>
+
                                     <div class="col-md-7 px-5">
                                         <br>
                                         <h2 class="text-center">MY SKILLS</h2><br>
@@ -153,7 +160,7 @@
 
                             <!-- PROJECTS -->
                             <br>
-                            <div class="projects px-5">
+                            <div class="projects px-5" id="projects">
                                 <h2 class="text-center">MY PROJECTS</h2><br><br>
                                 <div class="row">
                                     <div class="col-md-4 mb-2">
@@ -185,11 +192,11 @@
 
                             <!-- BLOGS -->
                             <br><br>
-                            <div class="latest-post px-5">
+                            <div class="latest-post px-5" id="blogs">
                                 <h2 class="text-center">LATEST POSTS</h2><br><br>
                                 <div class="row">
-                                    <div class="col-md-4 col-sm-6 mb-3">
-                                        <a href="#">
+                                    <div class="col-md-4 col-sm-6 mb-3 post">
+                                        <a href="post-detail.html">
                                             <h5>HOW TO BE A PROFESSIONAL WEB DEVELOPER IN ONE YEAR</h5><br>
                                             <img src="images/post1.jpg" alt=""><br><br>
                                             <small>December 26, 2024 | by Thet Htar</small><br><br>
@@ -200,8 +207,8 @@
                                             </p>
                                         </a>                            
                                     </div>
-                                    <div class="col-md-4 col-sm-6 mb-3">
-                                        <a href="#">
+                                    <div class="col-md-4 col-sm-6 mb-3 post">
+                                        <a href="post-detail.html">
                                             <h5>HOW TO BE A PROFESSIONAL WEB DEVELOPER IN ONE YEAR</h5><br>
                                             <img src="images/post3.jpg" alt=""><br><br>
                                             <small>December 26, 2024 | by Thet Htar</small><br><br>
@@ -212,8 +219,8 @@
                                             </p>
                                         </a>                            
                                     </div>
-                                    <div class="col-md-4 col-sm-6 mb-3">
-                                        <a href="#">
+                                    <div class="col-md-4 col-sm-6 mb-3 post">
+                                        <a href="post-detail.html">
                                             <h5>HOW TO BE A PROFESSIONAL WEB DEVELOPER IN ONE YEAR</h5><br>
                                             <img src="images/post2.jpg" alt=""><br><br>
                                             <small>December 26, 2024 | by Thet Htar</small><br><br>
